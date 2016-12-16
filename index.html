@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/camera.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css"/>
+    
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.equalheights.js"></script>
@@ -58,44 +59,7 @@
                             </li>
                             <li><a href="bulletinboard.html">公告板</a></li>
                             <li><a href="#">風雲榜</a></li>
-                            <li><a href="#">Login</a>
-                                <ul>
-               <li>
-                  <div class="rows">
-                        <div class="col-md-12">
-                           Login via
-                           <div class="social-buttons">
-                              <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                              <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                           </div>
-                                   or
-                           <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                 <div class="form-group">
-                                     <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                </div>
-                                 <div class="form-group">
-                                     <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                <div><a href="#" class="remind">Forget the password ?</a></div>
-                                 </div>
-                                 <div class="form-group">
-                                     <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                 </div>
-                                 <div class="checkbox">
-                                     <label>
-                                   <input type="checkbox"> keep me logged-in
-                                     </label>
-                                 </div>
-                          </form>
-                        </div>
-                        <div class="bottom text-center">
-                           New here ? <a href="#" class="remind">Join Us</a>
-                        </div>
-                   </div>
-               </li>
-               </ul>
-                            </li>
+                            <li><a href="#openModal">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -310,50 +274,13 @@
     </div>
 </div>
 
-<!--<div class="container">
-    <div class="row wrap_1">
-        <div class="grid_6">
-            <div class="wrap_6">
-                <div class="box_2 maxheight2">
-                    <div class="put-left"><img src="images/index_img01.png" alt="Image 1"/></div>
-                    <div class="caption">
-                        <h3 class="text_2 color_2">
-                            Save Your Time <br/>
-                            with Us
-                        </h3>
-                        <p class="text_3">
-                            Morem ipsum dolor sit amettetur dipiscing elit. In mollis erat mattis neque facilisis,
-                            sit amet ultries wertolio dasererat rutru.
-                        </p>
-                        <a href="#" class="btn_2">read more</a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-        <div class="grid_6">
-                <div class="wrap_6">
-                    <div class="box_2 maxheight2">
-                        <div class="put-left"><img src="images/index_img02.png" alt="Image 2"/></div>
-                        <div class="caption">
-                            <h3 class="text_2 color_2">
-                                The Highest <br/>
-                                Quality Services
-                            </h3>
-                            <p class="text_3">
-                                Lorem ipsum dolor sit amettetur dipiscing elit. In mollis erat mattis neque facilisis,
-                                sit amet ultries wertolio dasererat rutrum.
-                            </p>
-                            <a href="#" class="btn_2">read more</a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-           
-        </div>
-    </div>
-</div>-->
-
+<!--Login-->
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="closes">X</a>
+        <iframe src="login.html" width="350px" height="423px" frameborder="0" scrolling="no"></iframe>
+    </div>    
+</div>
 <!--<div class="container">
     <div class="row wrap_9 wrap_4 wrap_10">
         <div class="grid_12">
@@ -389,6 +316,7 @@
     </div>
 </footer>
 <script src="js/script.js"></script>
+
 <!--Hide the posts-->
 <script>
     $(document).ready(function(){
@@ -406,5 +334,6 @@
         });
     });
 </script>
+
 </body>
 </html>
