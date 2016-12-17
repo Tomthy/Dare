@@ -1156,3 +1156,21 @@ a[data-type='lightbox']:hover img {
     }
 }
 
+/*index.html post*/
+.post_meta {padding-bottom: 5px 3px}
+
+.post_meta li {
+  display: inline-block; 
+  font-family:Georgia, "Times New Roman", Times, serif; 
+  font-style:italic; 
+  font-size: 12px; 
+  height: 16px; 
+  line-height:16px; 
+  padding-left: 22px; 
+  margin-right: 13px;
+}
+
+.post_meta_admin {background: url("../images/sprite.png") no-repeat 0 -64px}
+.post_meta_date{background: url("../images/sprite.png") no-repeat 0 -80px}
+.post_meta_comments{background: url("../images/sprite.png") no-repeat 0 0}
+
