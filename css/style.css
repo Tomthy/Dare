@@ -80,10 +80,6 @@ img {
 .img-wrap:hover .img_filter{
   filter: grayscale(80%);
 }
-.nav-img{
-  width: 30px;
-  height: auto;
-}
 
 
 /*============  Text  =============*/
