@@ -1114,7 +1114,7 @@ a[data-type='lightbox']:hover img {
   background-color: #2775e2;
   border-color: #2775e2;
 }
-
+/*btn css design for twitter*/
 .btn-twitter {
   color: #fff;
   background-color: #44ccfe;
@@ -1129,6 +1129,7 @@ a[data-type='lightbox']:hover img {
   background-color: #2bb4e8;
   border-color: #2bb4e8;
 }
+/*btn css design for twitter end*/
 .registration {
   text-align: center;
 }
