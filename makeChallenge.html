@@ -42,13 +42,30 @@
                <textarea type="text" class="form-control" id="form-textarea" placeholder="Detail your challenge here"></textarea>
                <br>
                <label>Select the target for this challenge to send to </label>
-                <select>
+                <select class="form-control" id="form-select-to-whom">
                   <option>public</option>
                   <option>to friend</option>
-                  
+                  <option>private</option>
                </select>
                <br>
-               <!-- start here-->
+
+              <div class="input-daterange input-group" id="datepicker">
+                  <input type="text" class="input-sm form-control" name="start" placeholder="mm/dd/yyyy"/>
+                  <span class="input-group-addon">to</span>
+                  <input type="text" class="input-sm form-control" name="end" placeholder="mm/dd/yyyy"/>
+              </div>
+              <br><br>
+               <button class="btn btn-theme btn-block" href="login.html" type="submit"><i class="fa fa-lock"></i>Send challenge</button>
+                <hr>
+            </div>
+       </form>
+</body>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
+
+
+<!-- start here
                   <div class="bootstrap-iso">
                   <div class="container-fluid">
                     <div class="row">
@@ -71,7 +88,8 @@
                     </div>
                   </div>
                   </div>
-               <!--end here-->
+               end here-->
+
                   <!--<div class="row">
                     <div class='col-sm-6'>
                       <div class="form-group">
@@ -89,26 +107,3 @@
                     });
                   </script>
                </div>-->
-              <br><br>
-               <button class="btn btn-theme btn-block" href="login.html" type="submit"><i class="fa fa-lock"></i>Send challenge</button>
-                <hr>
-            </div>
-       </form>
-</body>
-
-<!--<script>
-    $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-      };
-      date_input.datepicker(options);
-    })
-</script>-->
-<script src="js/script.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</html>

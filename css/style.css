@@ -80,7 +80,16 @@ img {
 .img-wrap:hover .img_filter{
   filter: grayscale(80%);
 }
-
+.caption{
+  height: 200px;
+  width: 370px;
+}
+.caption p{
+  width: 300px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 /*============  Text  =============*/
 .text_1 {
