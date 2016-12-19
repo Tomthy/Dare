@@ -568,19 +568,37 @@ img {
   border-radius: 100px;
 }
 .box_1 .icon_1:before {
-  content: '%';
-  font: bold 48px/117px 'Arial', sans-serif;
+  content: '\f179';
+  /*font: bold 48px/117px 'Arial', sans-serif;*/
+  font: 700 48px/117px 'FontAwesome';
 }
 .box_1 .icon_2:before {
-  content: '\f012';
+  content: '\f001';
   font: 700 48px/117px 'FontAwesome';
 }
 .box_1 .icon_3:before {
-  content: '\f007';
+  content: '\f06c';
   font: 700 48px/117px 'FontAwesome';
 }
 .box_1 .icon_4:before {
   content: '\f0ad';
+  font: 700 48px/117px 'FontAwesome';
+}
+.box_1 .icon_5:before {
+  content: '\f1a1';
+  /*font: bold 48px/117px 'Arial', sans-serif;*/
+  font: 700 48px/117px 'FontAwesome';
+}
+.box_1 .icon_6:before {
+  content: '\f1a8';
+  font: 700 48px/117px 'FontAwesome';
+}
+.box_1 .icon_7:before {
+  content: '\f1b0';
+  font: 700 48px/117px 'FontAwesome';
+}
+.box_1 .icon_8:before {
+  content: '\f0c3';
   font: 700 48px/117px 'FontAwesome';
 }
 .box_1 [class^='icon_'] + .text_2 {
