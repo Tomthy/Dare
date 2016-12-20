@@ -1202,3 +1202,18 @@ a[data-type='lightbox']:hover img {
 .post_meta_date{background: url("../images/sprite.png") no-repeat 0 -80px}
 .post_meta_comments{background: url("../images/sprite.png") no-repeat 0 0}
 
+
+/*login after*/
+.circular--portrait {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
