@@ -341,7 +341,7 @@ img {
 /*============  Headers  =============*/
 .header_1 {
   text-align: center;
-  font: 600 48px/60px 'Microsoft JhengHei UI', sans-serif;
+  font: 600 32px/60px 'Microsoft JhengHei UI', sans-serif;
 }
 .header_1.indent_1 {
   padding-bottom: 56px;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/camera.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
     
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -65,27 +66,43 @@
                           CONTENT
 =========================================================-->
 <section id="content">
-<div class="camera-wrapper">
-    <div id="camera" class="camera-wrap">
-        <div data-src="images/index_slide01.jpg">
-            <div class="fadeIn camera_caption">
-                <h2 class="text_1 color_1">Mannequin Challenge</h2>
-                <a class="btn_1" href="#">More info</a>
+<div class="container">
+<br>
+</div>
+<div class="slider">
+      <div class="arrows">
+        <a class="previous" href="#">&#xf053;</a>
+        <a class="next" href="#">&#xf054;</a>
+      </div>
+      <div class="slides">
+            <div class="slide active white" >
+                <h2>30天歌單</h2>
+                <p>玩法很簡單，趣味十足<BR>一個月內每天依照題目要求分享一首歌在自己的臉書或其他社交網站上</p>
+                <a target="_blank" href="#">更多資訊</a>
+            </div>
+            <div class="slide white" >
+                <h2>用左手化妝</h2>
+                <p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
+                <a target="_blank" href="#">更多資訊</a>
+            </div>
+            <div class="slide white" >
+                <h2>背包撞擊</h2>
+                <p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
+                <a target="_blank" href="#">更多資訊</a>
+            </div>
+            <div class="slide white" >
+                <h2>假人挑戰</h2>
+                <p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
+                <a target="_blank" href="#">更多資訊</a>
+            </div>
+            <div class="slide white" >
+                <h2>PPAP</h2>
+                <p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
+                <a target="_blank" href="#">更多資訊</a>
             </div>
         </div>
-        <div data-src="images/index_slide01.jpg">
-            <div class="fadeIn camera_caption">
-                <h2 class="text_1 color_1">30 DAYS SONG LIST</h2>
-                <a class="btn_1" href="#">More info</a>
-            </div>
+        <div class="bullets">
         </div>
-        <div data-src="images/index_slide01.jpg">
-            <div class="fadeIn camera_caption">
-                <h2 class="text_1 color_1">PPAP KUSO</h2>
-                <a class="btn_1" href="#">More info</a>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!--Login-->
@@ -95,23 +112,23 @@
         <iframe src="login.html" width="350px" height="423px" frameborder="0" scrolling="no"></iframe>
     </div>    
 </div>
-<!--<div class="container">
+<div class="container">
     <div class="row wrap_9 wrap_4 wrap_10">
         <div class="grid_12">
             <div class="header_1 wrap_3 color_3">
-                Get in Touch
+                更多挑戰，等你創造/發掘
             </div>
-            <div class="box_3">
+            <!-- <div class="box_3"> 
                 <ul class="list_1">
                     <li><a class="fa fa-twitter" href="#"></a></li>
                     <li><a class="fa fa-facebook" href="#"></a></li>
                     <li><a class="fa fa-google-plus" href="#"></a></li>
                     <li><a class="fa fa-pinterest" href="#"></a></li>
                 </ul>
-            </div>
+            </div>-->
         </div>
     </div>
-</div>-->
+</div>
 </section>
 </div>
 <!--========================================================
@@ -130,6 +147,71 @@
     </div>
 </footer>
 <script src="js/script.js"></script>
+<script>
+var $slider = $(".slider"), $bullets = $(".bullets");
+        function calculateHeight(){
+            var height = $(".slide.active").outerHeight();
+            $slider.height(height);
+        }
 
+        $(window).resize(function() {
+            calculateHeight();
+            clearTimeout($.data(this, 'resizeTimer'));
+        });
+        
+        function resetSlides(){
+            $(".slide.inactive").removeClass("inactiveRight").removeClass("inactiveLeft");
+        }
+
+        function gotoSlide($activeSlide, $slide, className){
+             $activeSlide.removeClass("active").addClass("inactive "+className);
+             $slide.removeClass("inactive").addClass("active");
+             calculateHeight();
+             resetBullets();
+             setTimeout(resetSlides, 300);
+        }
+
+        $(".next").on("click", function(){
+             var $activeSlide = $(".slide.active"),
+                 $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide:first-child");
+                 console.log($nextSlide);
+                 gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
+        });
+        $(".previous").on("click",  function(){
+             var $activeSlide = $(".slide.active"),
+                 $prevSlide = $activeSlide.prev(".slide").length != 0 ? $activeSlide.prev(".slide") : $(".slide:last-child");
+
+                 gotoSlide($activeSlide, $prevSlide, "inactiveRight");
+        });
+        $(document).on("click", ".bullet", function(){
+            if($(this).hasClass("active")){
+                return;
+            }
+            var $activeSlide = $(".slide.active");
+            var currentIndex = $activeSlide.index();
+            var targetIndex = $(this).index();
+            console.log(currentIndex, targetIndex);
+            var $theSlide = $(".slide:nth-child("+(targetIndex+1)+")");
+            gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
+        })
+        function addBullets(){
+            var total = $(".slide").length, index = $(".slide.active").index();
+            for (var i=0; i < total; i++){
+                var $bullet = $("<div>").addClass("bullet");
+                if(i==index){
+                    $bullet.addClass("active"); 
+                }
+                $bullets.append($bullet);
+            }
+        }
+        function resetBullets(){
+            $(".bullet.active").removeClass("active");
+            var index = $(".slide.active").index()+1;
+            console.log(index);
+            $(".bullet:nth-child("+index+")").addClass("active");
+        }
+        addBullets();
+        calculateHeight();
+</script>  
 </body>
 </html>
