@@ -1,0 +1,48 @@
+.proof-seg {
+	display: table;
+	margin: 0px auto;
+}
+.challenge-title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	background-color: #129894;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#container {
+	font-size: 1em;
+	width:960px;
+	background: #FFF;
+	box-shadow: 0px 2px 10px #888888;
+	/* 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	*/
+	padding: 20px;
+	margin: auto;
+	position: relative;
+}
+
+.descrip-title{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.upload-label{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	display: block;
+}
+
+#file-input
+{
+    display: none;
+}
