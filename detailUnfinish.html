@@ -4,6 +4,7 @@
     <title>Detail-unfinish</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,6 +13,9 @@
     <!--new File new link here!!!!!!!!!!!!!!!!!!!-->
     <link rel="stylesheet" type="text/css" href="css/detailUnfinish.css">
     <!--==========================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.equalheights.js"></script>
@@ -48,16 +52,17 @@
                     <nav class="nav put-right">
                         <ul class="sf-menu">
                             <li><a href="index.html">首頁</a></li>
-                            <li  class="current">
-                               <a href="#">挑戰者</a>
+                            <li><a href="challenger.html">挑戰者</a></li>
+                            <li><a href="bulletinboard.html">公告板</a></li>
+                            <li><a href="rank.html">風雲榜</a></li>
+                            <li class="current"><br><img class="circular--portrait" src="images/index-1_img07.jpg" />
                                 <ul>
-                                    <li><a href="challenge.html">挑戰</a></li>
+                                    <li><a href="makechallenge.html">建立新挑戰</a></li>
+                                    <li class="current"><a href="challenge.html">挑戰</a></li>
                                     <li><a href="gauntlet.html">戰帖</a></li>
+                                    <li><a href="#">登出</a></li>
                                 </ul>
                             </li>
-                            <li><a href="bulletinboard.html">公告板</a></li>
-                            <li><a href="#">風雲榜</a></li>
-                            <li><a href="#">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -79,7 +84,7 @@
         </div>-->
         <div class="proof-upload">
             <label class="upload-label">
-                <img src="images/upload.png"/>
+                <img id="upload-img" src="images/upload.png"/>
             </label>
             <input id="file-input" type="file"/>
         </div>
@@ -90,8 +95,31 @@
         假人挑戰的規則很簡單，只要在歌曲撥放時全體靜止不動，同時攝影師開始將所有人拍攝進去，讓在場的人都像是個假人即為挑戰成功
     </p>
   </div>
-  
-  
+  <!--=====================================================================================================================================-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Enter text:</p>
+                    <input type="text" id="txtInput">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="btnSave" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+    <!-- /.modal-content -->
+        </div>
+    <!-- /.modal-dialog -->
+    </div>
+
+  <!--=====================================================================================================================================-->
 </div>
 
     <div class="container">
@@ -128,6 +156,33 @@
         </div>
     </div>
 </footer>
+<script>
+    $(document).ready(function(){
+        $("#upload-img").click(function(){
+            $('#myModal').modal('show');
+        });
+
+        $('#btnSave').click(function() {
+            var value = $('input').val();
+            $(this).replaceWith($('<iframe>' + '</iframe>'));
+            $(this).attr("src", value);
+            $('#myModal').modal('hide');
+        });
+});
+
+ /*   $("").attr("href", "");
+    $(function() {
+  $('#btnLaunch').click(function() {
+    $('#myModal').modal('show');
+  });
+
+  $('#btnSave').click(function() {
+    var value = $('input').val();
+    $('h1').html(value);
+    $('#myModal').modal('hide');
+  });
+  */
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
