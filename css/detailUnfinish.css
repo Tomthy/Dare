@@ -35,11 +35,26 @@
 	font-size: 20px;
 }
 
-.upload-label{
+.proof-upload{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
 	display: block;
+}
+#btnupload{
+	border: none;
+	background: white;
+}
+
+.proof-section{
+	padding-top: 10px;
+}
+
+#proof-tag{
+	display: table;
+	
+	width:920px;
+	height: 540px;
 }
 
 #file-input
