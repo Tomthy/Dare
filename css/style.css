@@ -8,7 +8,7 @@
 body {
   background: #129894;
   color: #363535;
-  font: 300 18px/36px 'Microsoft JhengHei UI', sans-serif;
+  font: 300 18px/36px 'FontAwesome', sans-serif;
 }
 .ic {
   border:0;
@@ -93,28 +93,28 @@ img {
 
 /*============  Text  =============*/
 .text_1 {
-  font: 300 68px/60px 'Open Sans', sans-serif;
+  font: 300 68px/60px 'FontAwesome', sans-serif;
 }
 .text_2 {
-  font: 600 24px/30px 'Open Sans', sans-serif;
+  font: 600 24px/30px 'FontAwesome', sans-serif;
 }
 .text_3 {
-  font: 300 18px/24px 'Open Sans', sans-serif;
+  font: 300 18px/24px 'FontAwesome', sans-serif;
 }
 .text_4 {
-  font: 400 14px/16px 'Open Sans', sans-serif;
+  font: 400 14px/16px 'FontAwesome', sans-serif;
 }
 .text_5 {
-  font: 300 14px/20px 'Open Sans', sans-serif;
+  font: 300 14px/20px 'FontAwesome', sans-serif;
 }
 .text_6 {
-  font: 400 18px/26px 'Open Sans', sans-serif;
+  font: 400 18px/26px 'FontAwesome', sans-serif;
 }
 .text_7 {
-  font: 400 18px/20px 'Open Sans', sans-serif;
+  font: 400 18px/20px 'FontAwesome', sans-serif;
 }
 .text_8 {
-  font: 400 14px/20px 'Open Sans', sans-serif;
+  font: 400 14px/20px 'FontAwesome', sans-serif;
 }
 /*============  Colors  =============*/
 .color_1 {
@@ -209,7 +209,7 @@ img {
 .sf-menu > li {
   position: relative;
   float: left;
-  font: 400 22px/22px 'Marvel', sans-serif;
+  font: 400 22px/22px 'FontAwesome', sans-serif;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 1.1px;
@@ -308,7 +308,7 @@ img {
     border-radius: 0;
     -webkit-appearance: none;
     outline: none;
-    font: normal 14px 'Open Sans', sans-serif;
+    font: normal 14px 'FontAwesome', sans-serif;
     cursor: pointer;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -341,7 +341,7 @@ img {
 /*============  Headers  =============*/
 .header_1 {
   text-align: center;
-  font: 600 32px/60px 'Microsoft JhengHei UI', sans-serif;
+  font: 600 32px/60px 'FontAwesome', sans-serif;
 }
 .header_1.indent_1 {
   padding-bottom: 56px;
@@ -362,7 +362,7 @@ img {
   }
 }
 .header_2 {
-  font: 600 36px/30px 'Open Sans', sans-serif;
+  font: 600 36px/30px 'FontAwesome', sans-serif;
 }
 .header_2.indent_1 {
   padding-bottom: 30px;
@@ -468,7 +468,7 @@ img {
 /*============  Butttons  =============*/
 .btn_1 {
   display: inline-block;
-  font: 400 30px/30px 'Marvel', sans-serif;
+  font: 400 30px/30px 'FontAwesome', sans-serif;
   padding: 15px 51px 16px;
   letter-spacing: 1.5px;
   color: #000000;
@@ -482,7 +482,7 @@ img {
 .btn_2 {
   display: inline-block;
   padding: 4px 20px 3px;
-  font: 400 24px/30px 'Marvel', sans-serif;
+  font: 400 24px/30px 'FontAwesome', sans-serif;
   color: #413d3d;
   background: #f1f045;
 }
@@ -494,7 +494,7 @@ img {
 .btn_3 {
   display: inline-block;
   padding: 4px 34px 3px 33px;
-  font: 400 24px/30px 'Marvel', sans-serif;
+  font: 400 24px/30px 'FontAwesome', sans-serif;
   color: #413d3d;
   background: #f1f045;
 }
@@ -675,7 +675,7 @@ img {
   text-align: center;
   color: #ffffff;
   background: #129894;
-  font: 700 36px/48px 'Open Sans', sans-serif;
+  font: 700 36px/48px 'FontAwesome', sans-serif;
 }
 .box_5 .text_2 + .text_3 {
   padding-top: 24px;
@@ -1189,7 +1189,7 @@ a[data-type='lightbox']:hover img {
 
 .post_meta li {
   display: inline-block; 
-  font-family:Georgia, "Times New Roman", Times, serif; 
+  font-family:Georgia, "FontAwesome", Times, serif; 
   font-style:italic; 
   font-size: 12px; 
   height: 16px; 
