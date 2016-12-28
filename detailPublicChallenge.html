@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Challenge</title>
+    <title>detailPublicChallenge</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/isotope.css"/>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <!--==========================================================-->
     <!--new File new link here!!!!!!!!!!!!!!!!!!!-->
-    <link rel="stylesheet" type="text/css" href="css/readMorePage.css">
+    <link rel="stylesheet" type="text/css" href="css/detailPublicChallenge.css">
     <!--==========================================================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -63,22 +65,30 @@
                           CONTENT
 =========================================================-->
 <section id="content">
-    <div id="container">
-    <div class="challenge-title">
-        假人挑戰
-    </div>
-    <section class="proof-section">
-        <div   class="proof-seg">
-       
+    <div class="mycontainer">
+        <div class="challenge-title">
+            假人挑戰
         </div>
-    </section>
-  <div class="one-half" id="description">
-    <span class="descrip-title">One half</span>
-    <p>Perquiramus atque ut casus tui ex quae ad te ad suis caelo dicit hoc. Tempore percussus ait est amet consensit cellula rei civibus in modo ad nomine. Navibus celebrent duo dominus Lampsacenus tu bestias terras navis cupit quae vero quo. A his domino vias multis miraculum manibus individuationis quae ad suis ut diem obiecti invidunt cum magna duobus auro purpurea vobis.</p>
-  </div>
-  
-  
-</div>
+        <section class="proof-section">
+            <div class="proof-seg"></div>
+        </section>
+        <div class="one-half" id="description">
+            <span class="descrip-title">One half</span>
+            <p>Perquiramus atque ut casus tui ex quae ad te ad suis caelo dicit hoc. Tempore percussus ait est amet consensit cellula rei civibus in modo ad nomine. Navibus celebrent duo dominus Lampsacenus tu bestias terras navis cupit quae vero quo. A his domino vias multis miraculum manibus individuationis quae ad suis ut diem obiecti invidunt cum magna duobus auro purpurea vobis.</p>
+        </div>  
+    </div>
+
+    <!-- <div class="mycontainer">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="index-2_img02.jpg">
+            <img class="mySlides" src="index-2_img03.jpg">
+            <img class="mySlides" src="index-2_img04.jpg">
+            <img class="mySlides" src="index-2_img05.jpg">
+            <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+        </div>
+    </div> -->
+
 
     <div class="container">
         <div class="row wrap_9 wrap_4 wrap_10">
@@ -115,5 +125,24 @@
     </div>
 </footer>
 <script src="js/script.js"></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
