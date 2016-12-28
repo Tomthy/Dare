@@ -16,7 +16,7 @@
 	border-bottom-left-radius: 5px;
 }
 
-#container {
+.mycontainer {
 	font-size: 1em;
 	width:920px;
 	background: #FFF;
@@ -33,8 +33,20 @@
 .proof-section{
 	padding-top: 10px;
 }
+.proof-seg iframe{
+	width: 920px;
+	height: 540px;
+}
 
 .descrip-title{
 	padding-top: 10px;
 	font-size: 20px;
+}
+
+.message-type{
+	width: 100%;
+	height: 150px;
+ 	resize: none;
+ 	font-size: 30px;
+ 	border-radius: 3px;
 }
