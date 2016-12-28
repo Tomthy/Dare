@@ -91,3 +91,11 @@
   background-color: #2bb4e8;
   border-color: #2bb4e8;
 }
+
+#buttongrp{
+  
+}
+
+#buttongrp button{
+  display: inline;
+}

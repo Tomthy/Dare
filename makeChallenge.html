@@ -33,27 +33,30 @@
 </head>
 <body>
         <form class="form-make-cha">
-            <h2 class="form-make-cha-heading">Make your own Challenge</h2>
+            <h2 class="form-make-cha-heading"><b>建立新挑戰</b></h2> 
             <div class="login-wrap">
-              <label>Name your challenge title : </label>
-              <input type="text" class="form-control" placeholder="Challenge Title" autofocus>
+              <label>挑戰名稱 : </label>
+              <input type="text" class="form-control" placeholder="命名你的挑戰" autofocus>
                <br>
-               <label>Describe your challenge details : </label>
-               <textarea type="text" class="form-control" id="form-textarea" placeholder="Detail your challenge here"></textarea>
+               <label>說明挑戰的細節 : </label>
+               <textarea type="text" class="form-control" id="form-textarea" placeholder="寫下有關挑戰的規則....."></textarea>
                <br>
-               <label>Select the target for this challenge to send to </label>
+               <label>選擇挑戰的權限 :</label>
                 <select class="form-control" id="form-select-to-whom">
-                  <option>public</option>
-                  <option>to friend</option>
-                  <option>private</option>
+                  <option><b>公開</b></option>
+                  <option>私人</option>
+                  <option>對朋友下戰帖</option>
                </select>
                <br>
 
               <div class="input-daterange input-group" id="datepicker">
+                  <label>挑戰的期限 :</label>
                   <input type="text" class="input-sm form-control" name="start" placeholder="mm/dd/yyyy"/>
               </div>
               <br><br>
-               <button class="btn btn-theme btn-block" href="login.html" type="submit"><i class="fa fa-lock"></i>Send challenge</button>
+              <div id="buttongrp">
+               <button class="btn btn-theme btn-block" href="#" type="submit"><b>送出挑戰</b></button>
+              </div>
                 <hr>
             </div>
        </form>
