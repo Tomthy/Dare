@@ -113,7 +113,7 @@ h2{
 		padding-right: 30px;
 	}
 	.slide a:after{
-		content: " \f105";
+		content: ">>";
 		font-family: "FontAwesome";
 		position: absolute;
 		margin-left: -10px;
