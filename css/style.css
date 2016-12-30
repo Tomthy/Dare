@@ -1217,3 +1217,9 @@ a[data-type='lightbox']:hover img {
   height: auto;
 }
 
+
+/*videoForChallenge.html*/
+.video{
+  padding-bottom: 5px;
+}
+
