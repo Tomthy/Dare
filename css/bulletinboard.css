@@ -892,3 +892,17 @@ a[data-type='lightbox']:hover img {
 .right_btn{
   margin-left: 80px;
 }
+
+/*login after*/
+.circular--portrait {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
