@@ -76,8 +76,30 @@
         <div class="one-half" id="description">
             <span class="descrip-title">One half</span>
             <p>Perquiramus atque ut casus tui ex quae ad te ad suis caelo dicit hoc. Tempore percussus ait est amet consensit cellula rei civibus in modo ad nomine. Navibus celebrent duo dominus Lampsacenus tu bestias terras navis cupit quae vero quo. A his domino vias multis miraculum manibus individuationis quae ad suis ut diem obiecti invidunt cum magna duobus auro purpurea vobis.</p>
-        </div>  
+        </div>
     </div>
+    <div class="mycontainer">
+    Counting Down:
+        <div class="timer">
+            <div class="days-wrapper">
+                <span class="days"></span>
+                <br><b class="align-adjust">days</b>
+            </div>
+            <div class="hours-wrapper">
+                <span class="hours"></span>
+                <br><b class="align-adjust">hours</b>
+            </div>
+            <div class="minutes-wrapper">
+                <span class="minutes"></span>
+                <br><b class="align-adjust">minutes</b>
+            </div>
+            <div class="seconds-wrapper">
+                <span class="seconds"></span>
+                <br><b class="align-adjust">seconds</b>
+            </div>
+        </div>
+    </div>
+
 
     <div class="mycontainer">
         <div class="w3-content w3-display-container" id="proof-preview">
@@ -129,13 +151,6 @@
 </footer>
 <script src="js/script.js"></script>
 <script>
-// $(document).ready(function(){
-//     var preview = $("mySlides").map();
-//     $("#preview-next").click(function(){
-//         $().hide();
-//     });
-// });
-
 var slideIndex = 1;
 showDivs(slideIndex,slideIndex+1);
 
@@ -160,5 +175,18 @@ function showDivs(n,p) {
     x[slideIndex].style.display = "inline-block";
 }
 </script>
+<!-- <script type="text/javascript">
+    /*
+        Countdown initializer
+    */
+    var now = new Date();
+    var countTo = 25 * 24 * 60 * 60 * 1000 + now.valueOf();    
+    $('.timer').countdown(countTo, function(event) {
+        $(this).find('.days').text(event.offset.totalDays);
+        $(this).find('.hours').text(event.offset.hours);
+        $(this).find('.minutes').text(event.offset.minutes);
+        $(this).find('.seconds').text(event.offset.seconds);
+    });
+</script> -->
 </body>
 </html>
