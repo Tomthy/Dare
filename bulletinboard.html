@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
+
     <link rel="stylesheet" href="css/bulletinboard.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -45,7 +46,7 @@
                                 <li><a href="videoForChallenge.html">挑戰影片</a></li>
                                 <li class="current"><a href="bulletinboard.html">挑戰</a></li>
                                 <li><a href="rank.html">風雲榜</a></li>
-                                <li><a href="#">Login</a></li>
+                                <li><a href="#openModal">Login</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -158,9 +159,15 @@
                 </div>
             </div>
         </div>
-        
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="closes">X</a>
+            <iframe src="login.html" width="350px" height="423px" frameborder="0" scrolling="no"></iframe>
+            </div>    
+        </div>
     </section>
 </div>
+
 <!--========================================================
                           FOOTER
 =========================================================-->

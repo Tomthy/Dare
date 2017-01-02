@@ -27,7 +27,9 @@
 #form-select-to-whom{
   height: 40px;
 }
-
+#form-title{
+  height: 40px;
+}
 /**/
 .form-control {
     box-shadow: none;

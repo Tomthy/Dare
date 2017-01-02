@@ -29,7 +29,17 @@
 	margin: auto;
 	position: relative;
 }
+#proof-preview img{
+	/*margin-left: 45px;*/
+	padding-left: 45px;
+	
+	/*text-align:center;
+	position: relative;*/
+}
 
+
+
+/*================================================*/
 .proof-section{
 	padding-top: 10px;
 }

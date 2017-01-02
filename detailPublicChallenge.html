@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/isotope.css"/>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    
     <!--==========================================================-->
     <!--new File new link here!!!!!!!!!!!!!!!!!!!-->
     <link rel="stylesheet" type="text/css" href="css/detailPublicChallenge.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <!--==========================================================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -78,18 +79,20 @@
         </div>  
     </div>
 
-    <!-- <div class="mycontainer">
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="index-2_img02.jpg">
-            <img class="mySlides" src="index-2_img03.jpg">
-            <img class="mySlides" src="index-2_img04.jpg">
-            <img class="mySlides" src="index-2_img05.jpg">
-            <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-            <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+    <div class="mycontainer">
+        <div class="w3-content w3-display-container" id="proof-preview">
+            <img class="mySlides" src="images/index-2_img01.jpg">
+            <img class="mySlides" src="images/index-2_img02.jpg">
+            <img class="mySlides" src="images/index-2_img03.jpg">
+            <img class="mySlides" src="images/index-2_img04.jpg">
+            <img class="mySlides" src="images/index-2_img05.jpg">
+            <img class="mySlides" src="images/index-2_img06.jpg">
+            <a class="w3-btn-floating w3-display-left" id="preview-next" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="w3-btn-floating w3-display-right" id="preview-previous" onclick="plusDivs(1)">&#10095;</a>
         </div>
-    </div> -->
+    </div>
 
-
+<!--======================================================================-->
     <div class="container">
         <div class="row wrap_9 wrap_4 wrap_10">
             <div class="grid_12">
@@ -126,22 +129,35 @@
 </footer>
 <script src="js/script.js"></script>
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+// $(document).ready(function(){
+//     var preview = $("mySlides").map();
+//     $("#preview-next").click(function(){
+//         $().hide();
+//     });
+// });
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+var slideIndex = 1;
+showDivs(slideIndex,slideIndex+1);
+
+function plusDivs(next) {
+  showDivs(slideIndex += next,slideIndex+=next);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+function showDivs(n,p) {
+    var i;
+    var j;
+    var x = document.getElementsByClassName("mySlides");
+    if (p > x.length) {
+        slideIndex = 1;
+    }    
+    if (p < 1) {
+        slideIndex = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "inline-block";
+    x[slideIndex].style.display = "inline-block";
 }
 </script>
 </body>
