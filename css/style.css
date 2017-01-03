@@ -1081,7 +1081,7 @@ a[data-type='lightbox']:hover img {
 /*LOGIN CONFIGURATION PAGE*/
 .form-login {
   max-width: 380px;
-  margin: 5px auto 0;
+  margin: 70px auto 0;
   background: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1221,4 +1221,10 @@ a[data-type='lightbox']:hover img {
 /*videoForChallenge.html*/
 .video{
   padding-bottom: 5px;
+}
+#text_post{
+  width: 250px;
+  overflow:hidden;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
 }
