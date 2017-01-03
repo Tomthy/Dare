@@ -2811,17 +2811,17 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #606061;
+  border-color: #129894;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  color: #000000;
+  background-color: #129894;
+  border-color: #129894;
 }
 .btn-primary:active,
 .btn-primary.active,
