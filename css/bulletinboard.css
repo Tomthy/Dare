@@ -105,10 +105,10 @@ img {
   font: 300 68px/60px 'Open Sans', sans-serif;
 }
 .text_2 {
-  font: 600 24px/30px 'Open Sans', sans-serif;
+  font: 600 20px/30px 'Open Sans', sans-serif;
 }
 .text_3 {
-  font: 300 18px/24px 'Open Sans', sans-serif;
+  font: 300 16px/24px 'Open Sans', sans-serif;
 }
 .text_4 {
   font: 400 14px/16px 'Open Sans', sans-serif;
@@ -491,7 +491,7 @@ img {
 .btn_2 {
   display: inline-block;
   padding: 4px 20px 3px;
-  font: 400 24px/30px 'Marvel', sans-serif;
+  font: 400 18px/30px 'Marvel', sans-serif;
   color: #413d3d;
   background: #f1f045;
 }
