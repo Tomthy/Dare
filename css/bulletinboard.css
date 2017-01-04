@@ -164,7 +164,7 @@ img {
 }
 /*============  Backgrounds  =============*/
 .bg_1 {
-  background: #fdfdfc;
+  background: #FFFFFF;
 }
 /*============  Floats  =============*/
 .put-left {
@@ -371,7 +371,7 @@ img {
   }
 }
 .header_2 {
-  font: 600 36px/30px 'Open Sans', sans-serif;
+  font: 600 22px/16px 'Open Sans', sans-serif;
 }
 .header_2.indent_1 {
   padding-bottom: 30px;
@@ -380,7 +380,7 @@ img {
   padding-bottom: 32px;
 }
 .header_2.indent_3 {
-  padding-bottom: 81px;
+  padding-bottom: 20px;
 }
 .header_2.indent_4 {
   padding-bottom: 43px;
@@ -420,7 +420,7 @@ img {
   padding-bottom: 44px;
 }
 .wrap_11 {
-  padding-top: 123px;
+  padding-top: 70px;
 }
 .wrap_12 {
   padding-bottom: 91px;
@@ -438,7 +438,7 @@ img {
   padding-top: 32px;
 }
 .wrap_17 {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .wrap_18 {
   padding-top: 117px;
@@ -447,7 +447,7 @@ img {
   padding-bottom: 115px;
 }
 .wrap_20 {
-  padding-bottom: 46px;
+  padding-bottom: 0px;
 }
 @media (max-width: 767px) {
   .wrap_11,
@@ -944,7 +944,7 @@ a[data-type='lightbox']:hover img {
 /*Core variables and mixins*/
 
 .right_btn{
-  margin-left: 80px;
+  float: right;
 }
 
 /*login after*/

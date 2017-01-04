@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bulletinboard</title>
+    <title>最新挑戰</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
-
+    <link rel="stylesheet" href="css/isotope.css"/>
     <link rel="stylesheet" href="css/bulletinboard.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.equalheights.js"></script>
+    <script src='js/isotope.min.js'></script>
     <!--[if lt IE 9]>
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -57,38 +58,48 @@
     <!--========================================================
                               CONTENT
     =========================================================-->
-    <section id="content">
+    <div class="container">
+        <div class="row wrap_11 wrap_20">
+            <div class="grid_12">
+                <div class="text_7 color_2">
+                    <ul id="filters">
+                    <h2 class="header_2 indent_3"><a href="#" data-filter="*">最新挑戰</a>|<a href="#" data-filter="hot">熱門挑戰</a></h2>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_1 wrap_17">
         <div class="container">
-            <div class="row wrap_11">
-                <div class="grid_8">
-                    <div class="wrap_10">
-                        <h2 class="header_2 indent_3">Latest Posts</h2>
-                        <div class="box_6">
+            <div class="row">
+                <div class="grid_12">
+                 <div class="isotope row"><!--div for elements-->
+                        <div class="element-item grid_9 hot" >
+                            <div class="box_6">
                             <div class="put-left">
                                 <div class="caption">
                                     <img src="images/index-3_img01.jpg" alt="Image 1"/>
                                     <p class="text_2 color_1">
-                                        PPAP KUSO<BR><BR>
-                                        Jan 20, 2017
+                                        背包撞擊<BR><BR>
+                                        Jan 3, 2017
                                     </p>
                                 </div>
                             </div>
                             <div class="caption">
                                 <h3 class="text_2 color_2">挑戰人數: 76</h3>
                                 <p class="text_3">
-                                    Horem ipsum dolor sit amettetur ing elit. In mollis erat mattis neque cilisis, sit
-                                    amet <br/>
-                                    ultries wertolio dasererat rutrume. <br/>
-                                    <br/>
-                                    In mollis erat mattis neque cilisis, sit amet ultries wertolio dasererat rutrume.
+                                    你能閃避重重障礙，安全度過嗎?!<br>
+
                                 </p><br>
-                                <span class="left_btn"><a class="btn_2" id="want_01">我要挑戰</a></span>
-                                <span class="right_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="left_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="right_btn"><a class="btn_2" id="want_01">我要挑戰</a></span>  
                             </div>
                             <div class="clearfix"></div>
+                            </div>
                         </div>
-                        <div class="box_6">
-                            <div class="put-left">
+                        <div class="element-item grid_9 hot" >
+                            <div class="box_6">
+                                <div class="put-left">
                                 <div class="caption">
                                     <img src="images/index-3_img02.jpg" alt="Image 2"/>
                                     <p class="text_2 color_1">
@@ -107,13 +118,15 @@
                                     In mollis erat mattis neque cilisis, sit amet ultries wertolio dasererat rutrumew.
                                 </p>
                                 <br>
-                                <span class="left_btn"><a class="btn_2" id="want_02">我要挑戰</a></span>
-                                <span class="right_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="left_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="right_btn"><a class="btn_2" id="want_02">我要挑戰</a></span> 
                             </div>
                             <div class="clearfix"></div>
+                            </div>
                         </div>
-                        <div class="box_6">
-                            <div class="put-left">
+                        <div class="element-item grid_9">
+                            <div class="box_6">
+                                <div class="put-left">
                                 <div class="caption">
                                     <img src="images/index-3_img03.jpg" alt="Image 3"/>
                                     <p class="text_2 color_1">
@@ -132,39 +145,20 @@
                                     In mollis erat mattis neque cilisis, sit amet ultries wertolio dasererat rutrumes.
                                 </p>
                                 <br>
-                                <span class="left_btn"><a class="btn_2" id="want_03">我要挑戰</a></span>
-                                <span class="right_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="left_btn"><a class="btn_2" href="#">更多資訊</a></span>
+                                <span class="right_btn"><a class="btn_2" id="want_03">我要挑戰</a></span> 
                             </div>
                             <div class="clearfix"></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="grid_4">
-                    <div class="wrap_10">
-                        <h2 class="header_2 indent_3">
-                            Hot Challenges
-                        </h2>
-                        <ul class="list_2 text_3 color_5">
-                            <li><a href="#">Gorem ipsum dolor sit </a></li>
-                            <li><a href="#">Amettetur ing elit</a></li>
-                            <li><a href="#">In mollis erat mattis neque </a></li>
-                            <li><a href="#">Cilisis, sit amet wertolio </a></li>
-                            <li><a href="#">Dasererat rutrumeerat </a></li>
-                            <li><a href="#">Meque cilisis, sit amet </a></li>
-                            <li><a href="#">Wertolio dasererat </a></li>
-                            <li><a href="#">Jpsum dolor situr </a></li>
-                            
-                        </ul>
-                    </div>
+                        
+                    <!--end element item-->
+                    </div> 
                 </div>
             </div>
         </div>
-        <div id="openModal" class="modalDialog">
-            <div>
-                <a href="#close" title="Close" class="closes">X</a>
-            <iframe src="login.html" width="350px" height="423px" frameborder="0" scrolling="no"></iframe>
-            </div>    
-        </div>
+    </div>
+
     </section>
 </div>
 

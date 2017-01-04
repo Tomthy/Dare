@@ -169,12 +169,15 @@ table {
 }
 .grid_10 {
   width: 970px;
+  margin-bottom: 30px;
 }
 .grid_9 {
   width: 870px;
+  margin-bottom: 40px;
 }
 .grid_8 {
   width: 770px;
+  margin-bottom: 30px;
 }
 .grid_7 {
   width: 670px;
