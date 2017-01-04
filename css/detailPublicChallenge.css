@@ -79,7 +79,7 @@
     padding-left: 25px;
 }
 
-/*@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 	
 	.timer .days-wrapper,
     .timer .hours-wrapper,
@@ -115,7 +115,7 @@
     .subscribe h3 { font-size: 28px; }
     .subscribe form input.subscribe-email, .subscribe form button { width: 100%; }
 
-}*/
+}
 
 /*================================================*/
 .proof-section{
@@ -126,6 +126,19 @@
 	height: 540px;
 }
 
+.info-column{
+	float: right;
+}
+
+.post_meta{
+	float: left;
+}
+#btnaccept{
+	width: 140px;
+	margin: 20px 370px 20px 370px;
+}
+
+/*==============================================================*/
 .descrip-title{
 	padding-top: 10px;
 	font-size: 20px;

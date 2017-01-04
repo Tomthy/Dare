@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +14,7 @@
     <!--==========================================================-->
     <!--new File new link here!!!!!!!!!!!!!!!!!!!-->
     <link rel="stylesheet" type="text/css" href="css/detailPublicChallenge.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    
     <!--==========================================================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -74,12 +75,25 @@
             <div class="proof-seg"></div>
         </section>
         <div class="one-half" id="description">
-            <span class="descrip-title">One half</span>
-            <p>Perquiramus atque ut casus tui ex quae ad te ad suis caelo dicit hoc. Tempore percussus ait est amet consensit cellula rei civibus in modo ad nomine. Navibus celebrent duo dominus Lampsacenus tu bestias terras navis cupit quae vero quo. A his domino vias multis miraculum manibus individuationis quae ad suis ut diem obiecti invidunt cum magna duobus auro purpurea vobis.</p>
+            <span class="descrip-title">假人挑戰</span>
+            <p>
+                由一群人來完成這個挑戰，當聽到音樂響起，所有人要表現得像是假人一樣，並由一名攝影師循著規畫好的路線，
+                將所有假人全部拍攝進去。
+            </p>
         </div>
+        <span class="info-column">
+            <ul class="post_meta" style="margin:10px">
+                <li class="post_meta_admin"><a href="#">Admin</a></li>
+                <li class="post_meta_date"><a href="#">2012-02-21</a></li>
+                <li class="post_meta_comments"><a href="#">12</a></li>
+            </ul>
+            挑戰人數:87
+        </span>
+        <button class="btn_2" id="btnaccept">我要挑戰</button>
+        <br>
     </div>
     <div class="mycontainer">
-    Counting Down:
+    倒數:
         <div class="timer">
             <div class="days-wrapper">
                 <span class="days"></span>
@@ -96,19 +110,20 @@
             <div class="seconds-wrapper">
                 <span class="seconds"></span>
                 <br><b class="align-adjust">seconds</b>
-            </div>
+            </div>  
         </div>
     </div>
 
 
     <div class="mycontainer">
+    其他人的挑戰影片:
         <div class="w3-content w3-display-container" id="proof-preview">
-            <img class="mySlides" src="images/index-2_img01.jpg">
-            <img class="mySlides" src="images/index-2_img02.jpg">
-            <img class="mySlides" src="images/index-2_img03.jpg">
-            <img class="mySlides" src="images/index-2_img04.jpg">
-            <img class="mySlides" src="images/index-2_img05.jpg">
-            <img class="mySlides" src="images/index-2_img06.jpg">
+            <a href=""><img class="mySlides" src="images/index-2_img01.jpg"></a>
+            <a href=""><img class="mySlides" src="images/index-2_img02.jpg"></a>
+            <a href=""><img class="mySlides" src="images/index-2_img03.jpg"></a>
+            <a href=""><img class="mySlides" src="images/index-2_img04.jpg"></a>
+            <a href=""><img class="mySlides" src="images/index-2_img05.jpg"></a>
+            <a href=""><img class="mySlides" src="images/index-2_img06.jpg"></a>
             <a class="w3-btn-floating w3-display-left" id="preview-next" onclick="plusDivs(-1)">&#10094;</a>
             <a class="w3-btn-floating w3-display-right" id="preview-previous" onclick="plusDivs(1)">&#10095;</a>
         </div>
@@ -162,6 +177,14 @@ function showDivs(n,p) {
     x[slideIndex-1].style.display = "inline-block";
     x[slideIndex].style.display = "inline-block";
 }
+
+ $("#btnaccept").click(function(){
+            $("#btnaccept").text(($("#btnaccept").text() == '挑戰中') ? '我要挑戰' : '挑戰中').fadeIn();
+            if($("#btnaccept").text() == '挑戰中')
+                document.getElementById( "btnaccept" ).style.background = "#249f9c";
+            else
+                document.getElementById( "btnaccept" ).style.background = "#f1f045";
+        });
 </script>
 <!-- <script type="text/javascript">
     /*
