@@ -689,8 +689,13 @@ img {
   padding: 8px 0 14px;
 }
 .box_6 .caption .text_2 + .text_3 {
-  padding-top: 25px;
-  
+  padding-top: 24px;
+  word-wrap:break-word;
+  width: 470px;
+  height: 140px;
+  overflow:hidden;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
 }
 .box_6 .caption .text_3 + .btn_2 {
   margin-top: 25px;
@@ -704,10 +709,44 @@ img {
     margin: 0 0 20px;
     text-align: center;
   }
+  .box_6 .caption .text_2 + .text_3 {
+  padding-top: 24px;
+  word-wrap:break-word;
+  width: 100%;
+  height: 140px;
+  overflow:hidden;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
+  }
+}
+@media (max-width: 1199px) {
+  .box_6 .put-left {
+    float: none;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .box_6 .caption .text_2 + .text_3 {
+  padding-top: 24px;
+  word-wrap:break-word;
+  width: 100%;
+  height: 140px;
+  overflow:hidden;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
+  }
 }
 @media (max-width: 479px) {
   .box_6 .put-left img {
     width: 100%;
+  }
+  .box_6 .caption .text_2 + .text_3 {
+  padding-top: 24px;
+  word-wrap:break-word;
+  width: 100%;
+  height: 140px;
+  overflow:hidden;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
   }
 }
 .box_7 {
@@ -960,12 +999,4 @@ a[data-type='lightbox']:hover img {
 .circular--portrait img {
   width: 100%;
   height: auto;
-}
-
-
-
-/*text show range*/
-.range{
-  width: 100%;
-  height: 170px;
 }
