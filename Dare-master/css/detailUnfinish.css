@@ -1,0 +1,159 @@
+.proof-seg {
+	display: table;
+	margin: 0px auto;
+}
+.challenge-title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	background-color: #129894;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#container {
+	font-size: 1em;
+	width:920px;
+	background: #FFF;
+	box-shadow: 0px 2px 10px #888888;
+	/* 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	*/
+	padding: 20px;
+	margin: auto;
+	position: relative;
+}
+
+.descrip-title{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.proof-upload{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	display: block;
+}
+#btnupload{
+	border: none;
+	background: white;
+}
+
+.proof-section{
+	padding-top: 10px;
+}
+
+#proof-tag{
+	display: table;
+	width:920px;
+	height: 540px;
+}
+.modal-body input{
+	width: 100%;
+}
+
+#file-input
+{
+    display: none;
+}
+
+/*count down css*/
+.timer {
+    margin-top: 40px;
+    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+.timer .days-wrapper,
+.timer .hours-wrapper,
+.timer .minutes-wrapper,
+.timer .seconds-wrapper {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin: 0 25px;
+    padding-top: 20px;
+    background: #2d2d2d; /* browsers that don't support rgba */
+    background: rgba(45, 45, 45, 0.7);
+    font-size: 18px;
+    line-height: 22px;
+    -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
+}
+
+.timer .days-wrapper:hover,
+.timer .hours-wrapper:hover,
+.timer .minutes-wrapper:hover,
+.timer .seconds-wrapper:hover {
+    background: #e75967 url(../img/pattern-2.png);
+    text-shadow: none;
+}
+
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds {
+    font-size: 80px;
+    line-height: 90px;
+    padding-left: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper { width: 140px; height: 140px; margin: 0 7px; }
+    
+    .timer .days,
+    .timer .hours,
+    .timer .minutes,
+    .timer .seconds { font-size: 60px; line-height: 70px; }
+	
+}
+
+@media (max-width: 767px) {
+
+    .logo h1 { text-align: center; }
+    .call-us { padding-bottom: 7px; text-align: center; }
+
+    .inner-bg { padding: 45px 0 50px 0; }
+
+    .coming-soon h2 { font-size: 36px; }
+
+    .timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper { width: 140px; height: 140px; margin: 7px; }
+
+    .timer .days,
+    .timer .hours,
+    .timer .minutes,
+    .timer .seconds { font-size: 60px; line-height: 70px; }
+
+    .subscribe h3 { font-size: 28px; }
+    .subscribe form input.subscribe-email, .subscribe form button { width: 100%; }
+
+}
+
+/*================================================*/
+.align-adjust{
+	margin-left:  120px;
+}
+
+.info-column{
+	float: right;
+}
+
+.post_meta{
+	float: left;
+}
+#btnaccept{
+	width: 140px;
+	margin: 20px 370px 20px 370px;
+}
