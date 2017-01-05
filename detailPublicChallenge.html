@@ -92,9 +92,9 @@
     </div>
     <div class="mycontainer">
     倒數:
-        <div class="timer">
+        <div class="timer" id="clockdiv">
             <div class="days-wrapper">
-                <span class="days"></span>
+                <span class="days">15</span>
                 <br><b class="align-adjust">days</b>
             </div>
             <div class="hours-wrapper">
@@ -176,14 +176,15 @@ function showDivs(n,p) {
     x[slideIndex].style.display = "inline-block";
 }
 
- $("#btnaccept").click(function(){
-            $("#btnaccept").text(($("#btnaccept").text() == '挑戰中') ? '我要挑戰' : '挑戰中').fadeIn();
-            if($("#btnaccept").text() == '挑戰中')
-                document.getElementById( "btnaccept" ).style.background = "#249f9c";
-            else
-                document.getElementById( "btnaccept" ).style.background = "#f1f045";
-        });
+    $("#btnaccept").click(function(){
+         $("#btnaccept").text(($("#btnaccept").text() == '挑戰中') ? '我要挑戰' : '挑戰中').fadeIn();
+        if($("#btnaccept").text() == '挑戰中')
+            document.getElementById( "btnaccept" ).style.background = "#249f9c";
+        else
+            document.getElementById( "btnaccept" ).style.background = "#f1f045";
+    });
 </script>
+<script src="js/countdown.js"></script>
 <!-- <script type="text/javascript">
     /*
         Countdown initializer
