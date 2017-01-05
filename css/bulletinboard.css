@@ -689,7 +689,8 @@ img {
   padding: 8px 0 14px;
 }
 .box_6 .caption .text_2 + .text_3 {
-  padding-top: 24px;
+  padding-top: 25px;
+  
 }
 .box_6 .caption .text_3 + .btn_2 {
   margin-top: 25px;
@@ -959,4 +960,12 @@ a[data-type='lightbox']:hover img {
 .circular--portrait img {
   width: 100%;
   height: auto;
+}
+
+
+
+/*text show range*/
+.range{
+  width: 100%;
+  height: 170px;
 }
