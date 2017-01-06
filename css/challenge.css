@@ -1229,9 +1229,3 @@ a[data-type='lightbox']:hover img {
 .video{
   padding-bottom: 5px;
 }
-#text_post{
-  width: 250px;
-  overflow:hidden;
-  /*white-space: nowrap;*/
-  text-overflow: ellipsis;
-}
