@@ -610,10 +610,6 @@ img {
 }
 .box_1 [class^='icon_'] + .text_2 + .text_3 + .btn_2 {
   margin-top: 41px;
-  width: 250px;
-  overflow:hidden;
-  /*white-space: nowrap;*/
-  text-overflow: ellipsis;
 }
 .box_2 {
   padding: 36px 15px 42px 62px;
