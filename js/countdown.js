@@ -38,7 +38,7 @@ $(window).load(function(){
     var timeinterval = setInterval(updateClock, 1000);
   }
     
-    var userdays = $(".days").text();
-    var deadline = new Date(Date.parse(new Date()) + userdays * 24 * 60 * 60 * 1000);
+    var usersecs = parseInt($(".seconds").text());
+    var deadline = new Date(Date.parse(new Date()) + usersecs *1000);
     initializeClock('clockdiv', deadline);
   });
