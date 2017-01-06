@@ -485,6 +485,7 @@ img {
   font: 400 18px/30px 'FontAwesome', sans-serif;
   color: #413d3d;
   background: #f1f045;
+  width: 140px;
 }
 .btn_2:hover {
   color: #ffffff;

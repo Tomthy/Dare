@@ -494,6 +494,8 @@ img {
   font: 400 18px/30px 'Marvel', sans-serif;
   color: #413d3d;
   background: #f1f045;
+  width: 80px;
+  text-align: center;
 }
 .btn_2:hover {
   color: #ffffff;
