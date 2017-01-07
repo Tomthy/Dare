@@ -29,13 +29,6 @@
 	margin: auto;
 	position: relative;
 }
-#proof-preview img{
-	/*margin-left: 45px;*/
-	padding-left: 45px;
-
-	/*text-align:center;
-	position: relative;*/
-}
 
 /**/
 .align-adjust{
@@ -133,7 +126,17 @@
 }
 
 .info-column{
-	float: right;
+	margin-top: 20px;
+	float: left;
+	/*background-color: cyan;*/
+}
+
+#proof-preview img{
+	/*margin-left: 45px;*/
+	padding-left: 45px;
+
+	/*text-align:center;
+	position: relative;*/
 }
 
 .post_meta{

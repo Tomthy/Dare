@@ -42,6 +42,21 @@
 	padding-top: 10px;
 	font-size: 20px;
 }
+/**/
+.info-column{
+	
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+.info-column a{
+	float: right;
+	font-size: 20px;
+}
+
+
+
+/**/
 
 .message-type{
 	width: 100%;
@@ -89,3 +104,4 @@
 	border: 1px solid #129894;
 	/*border-color: cyan;*/
 }
+
