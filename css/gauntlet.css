@@ -1,0 +1,14 @@
+.read-acp-gauntlet{
+	display: inline-block;
+}
+
+.read-acp-gauntlet a{
+	display: table-cell;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.read-acp-gauntlet #read-link{
+	width: 120px;
+	text-align: center;
+}
