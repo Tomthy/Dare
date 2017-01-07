@@ -1223,3 +1223,10 @@ a[data-type='lightbox']:hover img {
 .video{
   padding-bottom: 5px;
 }
+
+.box_inner{
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
+  padding-bottom: 15px;
+}
