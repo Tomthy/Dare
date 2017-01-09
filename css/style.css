@@ -1201,7 +1201,7 @@ a[data-type='lightbox']:hover img {
 
 .post_meta_admin {background: url("../images/sprite.png") no-repeat 0 -64px}
 .post_meta_date{background: url("../images/sprite.png") no-repeat 0 -80px}
-.post_meta_comments{background: url("../images/sprite.png") no-repeat 0 0}
+.post_meta_likes{background: url("../images/sprite.png") no-repeat 0 -97px}
 
 
 /*login after*/
